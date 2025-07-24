@@ -33,24 +33,8 @@ Many thanks to them for providing it! Please support them if you are able :heart
 
 ### Basic Usage
 
-```python
-from greek_bible_parser import GreekBibleParser
-from greek_bible_api import GreekTextAnalyzer
-
-# Parse Bible text
-parser = GreekBibleParser()
-parser.load_from_docx("bgb.docx")
-
-# Initialize analyzer
-analyzer = GreekTextAnalyzer(parser)
-
-# Search for words
-results = analyzer.search_word("Ἰησοῦ")
-print(f"Found {len(results)} occurrences")
-
-# Get statistics
-stats = analyzer.get_vocabulary_stats()
-print(f"Total words: {stats['total_words']}")
+```bash
+python final_analysis_summary.py
 ```
 
 ### Web Interface
